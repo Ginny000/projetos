@@ -9,10 +9,10 @@ var player, playerBase, playerArcher, playerimage;
 var baseimage;
 
 function preload() {
-  backgroundImg = loadImage("background.png");
-  baseimage = loadImage("base.png");
-  playerimage = loadImage("player.png");
-  playerArcher = loadImage("playerArcher.png")
+  backgroundImg = loadImage("./assets/background.png");
+  baseimage = loadImage("./assets/base.png");
+  playerimage = loadImage("./assets/player.png");
+  playerArcher = loadImage("./assets/playerArcher.png")
 }
 
 function setup() {
@@ -38,7 +38,7 @@ function draw() {
   background(backgroundImg);
 
   Engine.update(engine);
-  image(baseimage, playerBase.position.x, playerBase.position.y, 180, 150);
+  //image(baseimage, playerBase.position.x, playerBase.position.y, 180, 150);
   image(playerimage, player.position.x, player.position.y, 50, 180);
 
   // Title
